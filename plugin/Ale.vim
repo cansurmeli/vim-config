@@ -28,5 +28,5 @@ let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 0
 let g:airline#extensions#ale#enabled = 1
-" lint only when defined, otherwise too many noise
-let g:ale_linters_explicit = 0
+" Convert to 0 to lint only when defined; otherwise too many noise
+let g:ale_linters_explicit = 1
