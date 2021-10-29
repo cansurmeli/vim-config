@@ -12,8 +12,10 @@ let g:ale_linters = {
 			\'sass':['sass-lint'],
 			\'plaintex':['texlab'],
 			\'java':['javac'],
-			\'c': ['clang']
+			\'c': ['clang'],
+			\'go': ['gofmt', 'golint']
 			\}
+
 let g:ale_fixers = {
 			\'css': ['prettier'],
 			\'haskell': ['hfmt'],
@@ -22,11 +24,19 @@ let g:ale_fixers = {
 			\'c': ['clang-format'],
 			\'javascript': ['eslint']
 			\}
+
 let g:ale_completion_enabled = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
-let g:ale_fix_on_save = 0
+let g:ale_fix_on_save = 0 
 let g:airline#extensions#ale#enabled = 1
+
 " Convert to 0 to lint only when defined; otherwise too many noise
 let g:ale_linters_explicit = 1
+
+let g:ale_go_gopls_init_options = {'ui.diagnostic.analyses': {
+        \ 'composites': v:false,
+        \ 'unusedparams': v:true,
+        \ 'unusedresult': v:true,
+        \ }}
