@@ -32,7 +32,7 @@ let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 0 
 let g:airline#extensions#ale#enabled = 1
 
-" Convert to 0 to lint only when defined; otherwise too many noise
+" Convert to 0 to lint only when defined; otherwise too much noise
 let g:ale_linters_explicit = 1
 
 let g:ale_go_gopls_init_options = {'ui.diagnostic.analyses': {
