@@ -11,3 +11,6 @@ set conceallevel=0
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+
+" Set the internal shell launched in Vim to zsh
+set shell=zsh
