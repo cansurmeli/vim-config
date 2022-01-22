@@ -40,4 +40,3 @@ inoremap {{     {
 inoremap {}     {}
 
 " Auto-populating 
-
