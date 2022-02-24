@@ -1,4 +1,5 @@
 let g:ale_linters = {
+<<<<<<< HEAD
 			\'haskell': ['hlint', 'hdevtools'], 
 			\'git': ['gitlint'],
 			\'vim': ['vint'],
@@ -15,19 +16,46 @@ let g:ale_linters = {
 			\'c': ['clang'],
 			\'Dockerfile': ['hadolint']
 			\}
+=======
+	\'haskell': ['hlint', 'hdevtools'], 
+	\'git': ['gitlint'],
+	\'vim': ['vint'],
+	\'swift': ['/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp'],
+	\'matlab':['mlint'],
+	\'python':['pylint'],
+	\'javascript':['eslint'],
+	\'json':['eslint'],
+	\'R':['lintr', 'styler'],
+	\'yaml':['prettier'],
+	\'sass':['sass-lint'],
+	\'plaintex':['texlab'],
+	\'java':['javac'],
+	\'c': ['clang'],
+	\'go': ['gofmt', 'golint']
+\}
+
+>>>>>>> bbb41b1ff470653e911a02ce7f71e73ceb0335e5
 let g:ale_fixers = {
-			\'css': ['prettier'],
-			\'haskell': ['hfmt'],
-			\'python': ['autopep8'],
-			\'java': ['google_java_format'],
-			\'c': ['clang-format'],
-			\'javascript': ['eslint']
-			\}
+	\'css': ['prettier'],
+	\'haskell': ['hfmt'],
+	\'python': ['autopep8'],
+	\'java': ['google_java_format'],
+	\'c': ['clang-format'],
+	\'javascript': ['eslint']
+\}
+
 let g:ale_completion_enabled = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
-let g:ale_fix_on_save = 0
+let g:ale_fix_on_save = 0 
 let g:airline#extensions#ale#enabled = 1
-" Convert to 0 to lint only when defined; otherwise too many noise
+
+" Convert to 0 to lint only when defined; otherwise too much noise
 let g:ale_linters_explicit = 1
+
+let g:ale_go_gopls_init_options = {'ui.diagnostic.analyses': {
+	\ 'composites': v:false,
+	\ 'unusedparams': v:true,
+	\ 'unusedresult': v:true,
+\ }}
