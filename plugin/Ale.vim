@@ -12,7 +12,8 @@ let g:ale_linters = {
 			\'sass':['sass-lint'],
 			\'plaintex':['texlab'],
 			\'java':['javac'],
-			\'c': ['clang']
+			\'c': ['clang'],
+			\'Dockerfile': ['hadolint']
 			\}
 let g:ale_fixers = {
 			\'css': ['prettier'],
