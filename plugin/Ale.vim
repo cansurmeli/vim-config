@@ -5,17 +5,18 @@ let g:ale_linters = {
 	\'swift': ['/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp'],
 	\'matlab':['mlint'],
 	\'python':['pylint'],
-	\'javascript':['eslint'],
-	\'json':['eslint'],
+	\'javascript':['prettier'],
+	\'html':['prettier'],
+	\'json':['prettier'],
 	\'R':['lintr', 'styler'],
 	\'yaml':['prettier'],
-	\'sass':['sass-lint'],
+	\'sass':['prettier'],
 	\'plaintex':['texlab'],
 	\'java':['javac'],
 	\'c': ['clang'],
 	\'go': ['gofmt', 'golint']
 	\'Dockerfile': ['hadolint']
-	\}
+\}
 
 let g:ale_fixers = {
 	\'css': ['prettier'],
