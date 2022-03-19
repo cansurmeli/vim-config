@@ -1,22 +1,4 @@
 let g:ale_linters = {
-<<<<<<< HEAD
-			\'haskell': ['hlint', 'hdevtools'], 
-			\'git': ['gitlint'],
-			\'vim': ['vint'],
-			\'swift': ['/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp'],
-			\'matlab':['mlint'],
-			\'python':['pylint'],
-			\'javascript':['eslint'],
-			\'json':['eslint'],
-			\'R':['lintr', 'styler'],
-			\'yaml':['prettier'],
-			\'sass':['sass-lint'],
-			\'plaintex':['texlab'],
-			\'java':['javac'],
-			\'c': ['clang'],
-			\'Dockerfile': ['hadolint']
-			\}
-=======
 	\'haskell': ['hlint', 'hdevtools'], 
 	\'git': ['gitlint'],
 	\'vim': ['vint'],
@@ -32,9 +14,9 @@ let g:ale_linters = {
 	\'java':['javac'],
 	\'c': ['clang'],
 	\'go': ['gofmt', 'golint']
-\}
+	\'Dockerfile': ['hadolint']
+	\}
 
->>>>>>> bbb41b1ff470653e911a02ce7f71e73ceb0335e5
 let g:ale_fixers = {
 	\'css': ['prettier'],
 	\'haskell': ['hfmt'],
