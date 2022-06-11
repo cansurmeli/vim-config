@@ -14,7 +14,7 @@ let g:ale_linters = {
 	\'plaintex':['texlab'],
 	\'java':['javac'],
 	\'c': ['clang'],
-	\'go': ['gofmt', 'golint']
+	\'go': ['gofmt', 'golint'],
 	\'Dockerfile': ['hadolint']
 \}
 
