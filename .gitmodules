@@ -58,3 +58,6 @@
 [submodule "pack/plugins/start/onehalf"]
 	path = pack/plugins/start/onehalf
 	url = https://github.com/sonph/onehalf.git
+[submodule "pack/plugins/opt/onedark.vim"]
+	path = pack/plugins/opt/onedark.vim
+	url = https://github.com/joshdick/onedark.vim.git
