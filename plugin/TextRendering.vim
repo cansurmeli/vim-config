@@ -26,11 +26,11 @@ if (empty($TMUX))
 endif
 
 " Make relative line numbers stand out
-augroup colorextend
-  autocmd!
-  autocmd ColorScheme * call onedark#extend_highlight("LineNr", { "fg": { "gui": "#CCCCCC" } })
-  autocmd ColorScheme * call onedark#extend_highlight("CursorLineNr", { "fg": { "gui": "#FF8888" } })
-augroup END
+"augroup colorextend
+  "autocmd!
+  "autocmd ColorScheme * call onedark#extend_highlight("LineNr", { "fg": { "gui": "#CCCCCC" } })
+  "autocmd ColorScheme * call onedark#extend_highlight("CursorLineNr", { "fg": { "gui": "#FF8888" } })
+"augroup END
 
 " Highlight the current line number
 if !has('nvim')
@@ -38,5 +38,6 @@ if !has('nvim')
     set cursorlineopt=number
 endif
 
-" Enable onedark colorscheme
-colorscheme onedark
+" Enable onehalf colorscheme
+colorscheme onehalfdark
+let g:airline_theme='onehalfdark'
