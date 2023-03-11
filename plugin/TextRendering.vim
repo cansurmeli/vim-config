@@ -39,5 +39,5 @@ if !has('nvim')
 endif
 
 " Enable onehalf colorscheme
-colorscheme onehalfdark
-let g:airline_theme='onehalfdark'
+"colorscheme onehalfdark
+"let g:airline_theme='onehalfdark'
