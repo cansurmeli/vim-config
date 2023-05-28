@@ -1,9 +1,6 @@
 [submodule "pack/plugins/start/ale"]
 	path = pack/plugins/start/ale
 	url = https://github.com/dense-analysis/ale.git
-[submodule "pack/plugins/start/ctrlp.vim"]
-	path = pack/plugins/start/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
 [submodule "pack/plugins/start/bullets.vim"]
 	path = pack/plugins/start/bullets.vim
 	url = https://github.com/dkarter/bullets.vim.git
@@ -62,3 +59,6 @@
 	path = pack/plugins/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
 	branch = release
+[submodule "pack/plugins/start/vim-devicons"]
+	path = pack/plugins/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
