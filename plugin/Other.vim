@@ -7,7 +7,7 @@
 " Complete options (disable preview scratch window, longest removed away to show the menu)
 set completeopt=menu,menuone
 
-" SuperTab completion fall-back 
+" SuperTab completion fall-back
 let g:SuperTabDefaultCompletionType='<c-x><c-u><c-p>'
 
 " Mastering Vim Quickly #43
@@ -20,7 +20,7 @@ function! s:GitBlame()
 	botright new
 	execute "$read !" . cmd
 	execute "normal " . nline . "gg"
-	execute "set filetype=perl" 
+	execute "set filetype=perl"
 endfunction
 
 nnoremap <leader>gb :Blame
@@ -38,5 +38,3 @@ inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
-
-" Auto-populating 

@@ -60,6 +60,6 @@ let g:ale_go_gopls_init_options = {'ui.diagnostic.analyses': {
 nmap <silent> <leader>aj :ALENext<cr>
 nmap <silent> <leader>ak :ALEPrevious<cr>
 "nnoremap K :ALEHover<CR>
-nnoremap <leader>rn :ALERename<CR>
+"nnoremap <leader>rn :ALERename<CR>
 nnoremap <leader>qf :ALECodeAction<CR>
 vnoremap <leader>qf :ALECodeAction<CR>

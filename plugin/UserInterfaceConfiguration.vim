@@ -9,8 +9,11 @@ set splitright
 set backspace=2
 set ruler								" always show the cursor position
 set noerrorbells				" disable beep on errors
-set visualbell					" flash the screen upon an error
+
+" Disable screen flashing
+set visualbell
 set t_vb=
+
 set mouse=							" disable any and all mouse interactions
 
 " Highlight the current line with style
