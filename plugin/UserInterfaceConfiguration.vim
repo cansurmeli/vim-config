@@ -1,18 +1,18 @@
-set relativenumber " show relative line numbers
-set number				 " also show the static line number for the current line while there
-set wildmenu       " visual autocomplete for the command menu
-set showmatch      " highlight matching [{()}]
-set noshowmode     " do not display the current mode as there is vim-airline
-set pumheight=20   " Limit popup menu height
+set relativenumber			" show relative line numbers
+set number							" also show the static line number for the current line while there
+set wildmenu						" visual autocomplete for the command menu
+set showmatch						" highlight matching [{()}]
+set noshowmode					" do not display the current mode as there is vim-airline
+set pumheight=20				" Limit popup menu height
 set lazyredraw
 set splitright
 set backspace=2
 set ruler								" always show the cursor position
 set noerrorbells				" disable beep on errors
 set visualbell					" flash the screen upon an error
+set t_vb=
 set mouse=							" disable any and all mouse interactions
 
-"set cursorline     " highlight current line
 " Highlight the current line with style
 hi CursorLine cterm=BOLD ctermbg=DarkBlue ctermfg=white guibg=darkred guifg=white
 

@@ -16,3 +16,10 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
+
+" While hooping through buffers, skip the Terminal buffer
+" https://vi.stackexchange.com/questions/16708/switching-buffers-in-vi-while-skipping-any-terminal-in-vi-8-1#16709
+augroup termIgnore
+	autocmd!
+	autocmd TerminalOpen * set nobuflisted
+augroup END

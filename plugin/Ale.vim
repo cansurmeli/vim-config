@@ -1,7 +1,7 @@
 let fixers_js = ["prettier", "eslint"]
 
 let g:ale_linters = {
-	\'haskell': ['hlint', 'hdevtools'], 
+	\'haskell': ['hlint', 'hdevtools'],
 	\'git': ['gitlint'],
 	\'vim': ['vint'],
 	\'swift': ['/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp'],
@@ -41,7 +41,7 @@ let g:ale_completion_enabled = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
-let g:ale_fix_on_save = 0 
+let g:ale_fix_on_save = 1
 let g:airline#extensions#ale#enabled = 1
 
 let g:ale_sign_error = "🐛"
@@ -59,7 +59,7 @@ let g:ale_go_gopls_init_options = {'ui.diagnostic.analyses': {
 
 nmap <silent> <leader>aj :ALENext<cr>
 nmap <silent> <leader>ak :ALEPrevious<cr>
-nnoremap K :ALEHover<CR>
+"nnoremap K :ALEHover<CR>
 nnoremap <leader>rn :ALERename<CR>
 nnoremap <leader>qf :ALECodeAction<CR>
 vnoremap <leader>qf :ALECodeAction<CR>
